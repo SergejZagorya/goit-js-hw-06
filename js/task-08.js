@@ -10,8 +10,17 @@ function handleSubmit(event) {
     if (value === "") {
       return alert("Все поля должны быть заполнены! ");
     }
+    // console.log(`${name}: ${value}`);
 
-    console.log(`${name}: ${value}`);
+    // console.log({
+    //   name,
+    //   value,
+    // });
+
+    console.table({
+      name,
+      value,
+    });
   });
 
   event.currentTarget.reset();
